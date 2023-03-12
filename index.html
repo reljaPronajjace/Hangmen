@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onload="novaIgra()">
+   
+    <div class="form__group" id="pocetak">
+      <input type="text" class="form__input" id="slova" placeholder="Unesite rec:" required="" /><br>
+      <button id="dgm" onclick="pokreni()" style="--c: #7f8490;--b: 5px;--s:12px">Kreni</button> 
+    </div>
+    
+<div id="kraj" style="display: none;">
+    <p id="p1" ></p>
+
+    <br><br><p id="izmedju"> asaaaaaa</p>
+    <div id="tastaturce"></div>
+    <br>
+    <br>
+    <canvas id="canvas" ></canvas>
+</div>
+<p class="poruka" id="porukaPoraz" style="display: none;"> 
+  <br>
+  Nazalost ste izgubili :(
+  </p>
+<p class="poruka" id="porukaPobeda" style="display: none;"> 
+  <br>
+  Svaka cast pobedili ste :)
+</p>
+
+
+
+</body>
+<script src="java.js"> </script>
+
+</html>

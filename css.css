@@ -1,0 +1,129 @@
+#p1{
+    font-size: 45px;
+}
+.tastSlovo{
+    height: 40px;
+    width: 40px;
+    border: 2px solid dark; 
+    box-shadow: 2px 2px dark; 
+  font-size: .85em; 
+  line-height: .85em; 
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: .05em; 
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+#kraj{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 62,5%;
+}
+#izmedju{
+  color: transparent;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+#dgm {
+
+  --b: 1px;   /* border thickness */
+  --s: .15em; /* size of the corner */
+  --c: #BD5532;
+  
+  padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+  color: var(--c);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .1em;
+}
+#dgm:hover,
+#dgm:focus-visible{
+  --_p: 0px;
+  outline-color: var(--c);
+  outline-offset: .05em;
+}
+#dgm:active {
+  background: var(--c);
+  color: #fff;
+}
+#dgm {
+  padding-left: 180px;
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  margin: .05em;
+}
+button{
+  text-align: center;
+
+}
+.poruka{
+  color:#fff;
+  font-size: 50px;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  border: 1px solid #000000;
+  background-color: aliceblue;
+
+}
